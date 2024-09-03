@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>win</class>
+ <widget class="QDialog" name="win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1368</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QFrame" name="bg">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>1381</width>
+     <height>771</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#bg{background-image: url('Ui/Untitled design.png');}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="main">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1371</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="HomeButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>71</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);
+border: none;
+font: 24pt &quot;Maiandra GD&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string></string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 36pt &quot;Maiandra GD&quot;;
+color: rgb(255, 85, 255);</string>
+     </property>
+     <property name="text">
+      <string>Admin</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="MessageButton">
+     <property name="geometry">
+      <rect>
+       <x>1200</x>
+       <y>10</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);
+border: none;
+font: 24pt &quot;Maiandra GD&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>💬</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PageLabel">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>40</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 85, 255);
+font: 22pt &quot;Maiandra GD&quot;;
+text-align: center;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Inventory&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="footer">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>680</y>
+      <width>1371</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="Menu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>221</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left: 40px;
+</string>
+    </property>
+    <widget class="QToolButton" name="InventoryButton">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>66</y>
+       <width>122</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QToolButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Inventory</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="StoreButton">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>151</y>
+       <width>94</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QToolButton:hover{
+	font-weight: bold;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Stores</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="EmployeeButton">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>236</y>
+       <width>127</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QToolButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Employee </string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="ProductsButton">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>321</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QToolButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Products</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="ReportButton">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>406</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QToolButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Report</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="LogoutButton">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>491</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QToolButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Logout</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="ProductTable">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>100</y>
+      <width>921</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Maiandra GD&quot;;
+</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Product ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="EmployeeTable">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>100</y>
+      <width>921</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Maiandra GD&quot;;
+</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Phone</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Position</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Branch</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="InvButtons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>100</y>
+      <width>221</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="AddInv">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Inventory</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ManInv">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Manage Inventory</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DelInv">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete Inventory</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Reload">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>300</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);
+border: none;
+font: 24pt &quot;Maiandra GD&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>🔃</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="EmpButtons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>100</y>
+      <width>221</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="AddEmp">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Employee</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ShowEmp">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Show Empoyees</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DelEmp">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete Employee</string>
+     </property>
+    </widget>
+    <zorder>AddEmp</zorder>
+    <zorder>DelEmp</zorder>
+    <zorder>ShowEmp</zorder>
+   </widget>
+   <widget class="QWidget" name="ProButtons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>100</y>
+      <width>221</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="ShowPro">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Show Products</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AddPro">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Product</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DelPro">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete Product</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="StoButtons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>100</y>
+      <width>221</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="AddStore">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Store</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="EditStore">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Edit Store</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DelStore">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete Store</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="BranchTable">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>100</y>
+      <width>921</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Maiandra GD&quot;;
+</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Branch ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Location</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QFrame" name="home">
+    <property name="geometry">
+     <rect>
+      <x>219</x>
+      <y>89</y>
+      <width>941</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>906</width>
+          <height>1218</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1200</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QTableWidget" name="InventoryTable_2">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>751</width>
+              <height>521</height>
+             </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;Maiandra GD&quot;;
+</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="horizontalHeaderHighlightSections">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>true</bool>
+            </attribute>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Messagebuttons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>100</y>
+      <width>231</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="AddInv_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Inventory</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ManInv_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Manage Inventory</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DelInv_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: rgb(85, 0, 0);
+	background-color: rgb(127, 155, 200);
+	font: 12pt &quot;Maiandra GD&quot;;
+	border-radius: 5;
+}
+QPushButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete Inventory</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Reload_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>300</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(85, 0, 0);
+border: none;
+font: 24pt &quot;Maiandra GD&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>🔃</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="MessageArea" native="true">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>99</y>
+      <width>1141</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 170, 255);</string>
+    </property>
+    <widget class="QWidget" name="InvButtons_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>0</y>
+       <width>221</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 85, 0);</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2"/>
+    </widget>
+    <widget class="QTextEdit" name="MessageEdit">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>490</y>
+       <width>721</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SendButton">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>490</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-radius: 15px;
+	background-color: rgb(255, 0, 0);
+	color: rgb(255, 85, 255);
+	border: none;
+	font: 12pt &quot;Maiandra GD&quot;;
+}
+QPushlButton:hover{
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="MessageDisp">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>0</y>
+       <width>921</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="reportView" native="true">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>931</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QListWidget" name="reportArea">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(85, 0, 0);</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>reportView</zorder>
+   <zorder>Messagebuttons</zorder>
+   <zorder>StoButtons</zorder>
+   <zorder>EmpButtons</zorder>
+   <zorder>ProButtons</zorder>
+   <zorder>InvButtons</zorder>
+   <zorder>EmployeeTable</zorder>
+   <zorder>BranchTable</zorder>
+   <zorder>ProductTable</zorder>
+   <zorder>MessageArea</zorder>
+   <zorder>main</zorder>
+   <zorder>footer</zorder>
+   <zorder>Menu</zorder>
+   <zorder>home</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
